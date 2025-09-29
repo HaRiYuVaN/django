@@ -1,0 +1,255 @@
+{% extends "base.html" %}
+{% load static %}
+{% block cta %} 
+
+<div class="container hero">
+  <div class="row">
+      <div class="col-12 col-lg-6 col-xl- offset-xl-1">
+          <h1>Exceptional Services of all kinds.</h1>
+          <p> At our Team
+              we combine world class service
+              with efficiency. </p>
+              <a href="{% url "appointment" %}" class="btn btn-light btn-lg action-button" type="button">Book an appointment</a>
+      </div>
+
+  </div>
+</div>
+
+{% endblock cta %}
+
+{% block content %}
+
+<section class="container py-5"  style="margin-block:200px;" id="team">
+    <div class="row text-center ">
+        <div class="col-lg-8 mx-auto">
+            <h1 class="display-4">Our Supporters</h1>
+            <p class="lead">Rely on established and competent players.
+            </p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row text-center">
+
+            <!-- Team item -->
+            <div class="col-xl-3 col-sm-6 mb-5">
+                <div class="bg-white rounded shadow-sm py-5 px-4"><img src="{% static 'D:\computer project\django\static\img\vmla1.jpg' %}" alt="" class=" mh-100img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                    <h5 class="mb-0">Vijay Mallya</h5>
+                    <span class="small text-uppercase text-muted">Producer</span>
+                </div>
+            </div><!-- End -->
+
+            <!-- Team item -->
+            <div class="col-xl-3 col-sm-6 mb-5">
+                <div class="bg-white rounded shadow-sm py-5 px-4"><img src="{% static 'D:\computer project\django\static\img\vkli2.webp' %}" alt="" class=" mh-100 rounded-circle mb-3 img-thumbnail shadow-sm">
+                    <h5 class="mb-0">Virat Kholi</h5>
+                    <span class="small text-uppercase text-muted">Financial advisor</span>
+                </div>
+            </div><!-- End -->
+
+            <!-- Team item -->
+            <div class="col-xl-3 col-sm-6 mb-5">
+                <div class="bg-white rounded shadow-sm py-5 px-4"><img src="{% static 'D:\computer project\django\static\img\kmla3.jpg' %}" alt="" class=" mh-100img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                    <h5 class="mb-0">Kamala Harris</h5>
+                    <span class="small text-uppercase text-muted">Tactical Expert</span>
+                </div>
+            </div><!-- End -->
+
+            <!-- Team item -->
+            <div class="col-xl-3 col-sm-6 mb-5">
+                <div class="bg-white rounded shadow-sm py-5 px-4"><img src="{% static 'D:\computer project\django\static\img\bbg.jpg' %}" alt="" class=" mh-100img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                    <h5 class="mb-0">DR John</h5>
+                    <span class="small text-uppercase text-muted">Consultant Obstetrician</span>
+                </div>
+            </div><!-- End -->
+        </div>
+    </div>
+</section><!-- End -->
+
+
+
+<section id="services">
+  <div class="bg-primary text-center py-5 mb-4">
+      <div class="container">
+        <h1 class="fw-light text-white">Services</h1>
+        <p class="overview">We provide compassionate and expert care to our community. You are at the center of everything we do. Let us be your homecare partner.</p>
+      </div>
+    </div>
+  <div class="container">
+    <div class="row">
+      <!-- Team Member 1 -->
+      <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card border-0 shadow">
+          <img src="{% static 'D:\computer project\django\static\img\huskeepin.png' %}" class="card-img-top" alt="...">
+          <a href="{% url "appointment" %}" class="btn btn-light btn-lg action-button" type="button">Book</a>
+          {% csrf_token %}
+          <div class="card-body text-center">
+            <h5 class="card-title mb-0">House Keeping</h5>
+            <div class="card-text text-black-50">Your personalized home professionals.</div>
+          </div>
+        </div>
+      </div>
+      <!-- Team Member 2 -->
+      <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card border-0 shadow">
+          <img src="{% static 'D:\computer project\django\static\img\crcln2.png' %}" class="card-img-top" alt="...">
+          <a href="{% url "appointment" %}" class="btn btn-light btn-lg action-button" type="button">Book</a>
+          {% csrf_token %}
+          <div class="card-body text-center">
+            <h5 class="card-title mb-0">Car Wash</h5>
+            <div class="card-text text-black-50">Your car care made easy.</div>
+          </div>
+        </div>
+      </div>
+      <!-- Team Member 3 -->
+      <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card border-0 shadow">
+          <img src="{% static 'D:\computer project\django\static\img\bbysit.png' %}" class="card-img-top" alt="...">
+          <a href="{% url "appointment" %}" class="btn btn-light btn-lg action-button" type="button">Book</a>
+          {% csrf_token %}
+          <div class="card-body text-center">
+            <h5 class="card-title mb-0">Baby Sitting</h5>
+            <div class="card-text text-black-50">baby sitting services.</div>
+          </div>
+        </div>
+      </div>
+      <!-- Team Member 4 -->
+      <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card border-0 shadow">
+          <img src="{% static 'D:\computer project\django\static\img\gardening-services.png' %}" class="card-img-top" action="{% url 'appointment' %}" alt="...">
+          <a href="{% url "appointment" %}" class="btn btn-light btn-lg action-button" type="button">Book</a>
+          {%csrf_token%}
+          <div class="card-body text-center">
+            <h5 class="card-title mb-0">Gardening</h5>
+            <div class="card-text text-black-50">Dream garden at your home.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /.row -->
+  
+  </div>
+</section>
+
+<section class="text-center conatiner" style="margin-block:200px;" id="reviews">
+    <h2>Satisfied Customers</h2>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Carousel indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>   
+        <!-- Wrapper for carousel items -->
+        <div class="carousel-inner">		
+            <div class="carousel-item active">
+                <div class="img-box"><img src="{% static 'D:\computer project\django\static\img\Snoop-Dogg-2022.webp' %}" alt=""></div>
+                <p class="testimonial">f it's flipping hamburgers at McDonald's, be the best hamburger flipper in the world. Whatever it is you do you have to master your craft.</p>
+                <p class="overview">Snoop Dogg</p>
+            </div>
+            <div class="carousel-item">
+                <div class="img-box"><img src="{% static 'D:\computer project\django\static\img\rik.jpg' %}" alt=""></div>
+                <p class="testimonial">Never gonna give you up, Never gonna let you down, Never gonna run around and desert you.</p>
+                <p class="overview">Rick Astley</p>
+            </div>
+            <div class="carousel-item">
+                <div class="img-box"><img src="{% static 'D:\computer project\django\static\img\Osama_bin_Laden_portrait.jpg' %}" alt=""></div>
+                <p class="testimonial">This place may be bombed and we will be killed.</p>
+                <p class="overview">Osama</p>
+
+                
+            </div>	
+
+        </div>
+        <a class="carousel-control-prev " href="#demo" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true" ></span>
+           <span class="sr-only">Previous</span>
+         </a>
+         <a class="carousel-control-next" href="#demo" role="button" data-slide="next">
+           <span class="carousel-control-next-icon" aria-hidden="true"></span>
+           <span class="sr-only">Next</span>
+         </a>
+
+    </div>
+
+</section>
+
+
+<section id="contact" class="card m-4 p-4">
+    <div class="container">
+        <div class="row text-center">
+          
+            <div class="col-sm-6">
+            <div class="contact-detail-box">
+              <i class="far fa-envelope text-colored fa-3x"></i>
+              <h4>Get In Touch</h4>
+              <abbr title="Phone">P:</abbr> 69420 69420<br>
+              E: <a href="mailto:email@email.com" class="text-muted">procoderman189@email.com</a>
+            </div>
+          </div><!-- end col -->
+  
+          <div class="col-sm-6">
+            <div class="contact-detail-box">
+              <i class="fa fa-map-marker fa-3x text-colored"></i>
+              <h4>Our Location</h4>
+  
+              <address>
+                C A # 33, Sector IV, HSR Layout,<br>
+                Bengaluru, Karnataka 560102<br>
+            </address>
+            </div>
+          </div><!-- end col -->
+  
+  
+  
+        </div>
+        <!-- end row -->
+  
+  
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="contact-map">
+              <div style="width: 100%"><iframe width="100%" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=500&amp;hl=en&amp;q=karnataka,%20bangalore,%20hsr%20layout%20,%20freedom%20international%20school+(Office)&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/">gps devices</a></iframe></div>
+            </div>
+          </div><!-- end col -->
+  
+          <!-- Contact form -->
+          <div class="col-sm-6">
+            <form role="form" name="ajax-form" id="ajax-form" method="post" class="form-main" action="{% url 'home' %}">
+            {% csrf_token %}
+              <div class="form-group">
+                <label for="name2">Name</label>
+                <input class="form-control" id="name2" name="name" type="text" placeholder="name">
+                <div class="error" id="err-name" style="display: none;">Please enter name</div>
+              </div> <!-- /Form-name -->
+  
+              <div class="form-group">
+                <label for="email2">Email</label>
+                <input class="form-control" id="email2" name="email" type="text" placeholder="email">
+                <div class="error" id="err-emailvld" style="display: none;">E-mail is not a valid format</div> 
+              </div> <!-- /Form-email -->
+  
+              <div class="form-group">
+                <label for="message2">Message</label>
+                <textarea class="form-control" id="message2" name="message" rows="5" placeholder="message">Message</textarea>
+  
+                <div class="error" id="err-message" style="display: none;">Please enter message</div>
+              </div> <!-- /col -->
+  
+              <div class="row">            
+                  <button type="submit" class="btn btn-primary btn-shadow btn-rounded w-md" id="send">Send</button>
+                </div> <!-- /col -->
+              </div> <!-- /row -->
+  
+            </form> <!-- /form -->
+          </div> <!-- end col -->
+  
+        </div> <!-- end row -->
+            
+      </div>
+</section>
+
+
+
+
+{% endblock content %}
